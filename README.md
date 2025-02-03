@@ -1,0 +1,2 @@
+# homework-1
+C# ENTRY LEVEL QUESTİONS
