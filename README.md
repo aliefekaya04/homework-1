@@ -137,119 +137,119 @@ Console.ReadKey();
 //Q7 If a person purchases 100 TL or more from the store, he gets a 10% discount, if he buys 200 TL or more, he gets a 15% discount, if he makes a purchase of 300 TL or more, he gets a 20% discount, and write the C# code that displays the amount he will pay on the screen.
 
 
-Console.WriteLine(" ABSOLUTE SHARPNESS OF C giyim mağazısına hoşgeldiniz");
-Console.WriteLine(" yaptığınız total alışveriş miktarını giriniz");
-int tutar = int.Parse(Console.ReadLine());
-if (tutar >= 100 && tutar < 200)
-{
-    Console.WriteLine("kazandığnız indirim oranı %10, TEBRİKLER 1");
-    double odeme = (tutar) * 9 / 10;
-    Console.WriteLine("ödemeniz gereken miktar " + odeme);
-}
-else if (tutar >= 200 && tutar < 300)
-{
-    Console.WriteLine("kazandığnız indirim tutarı %15, TEBRİKLER");
-    double odeme2 = (tutar) * 85 / 100;
-    Console.WriteLine("ödemeniz gereken miktar " + odeme2);
-}
-else if (tutar >= 300)
-{
-    Console.WriteLine("kazandığınız indirim tutarı %20'dir");
-    double odeme3 = (tutar) * 8 / 10;
-    Console.WriteLine("ödemeniz gereken miktar " + odeme3);
-}
-else
-{
-    Console.WriteLine("indirim kazanamadınız ödemeniz gerek miktar " + tutar);
-}
+	Console.WriteLine(" ABSOLUTE SHARPNESS OF C giyim mağazısına hoşgeldiniz");
+	Console.WriteLine(" yaptığınız total alışveriş miktarını giriniz");
+	int tutar = int.Parse(Console.ReadLine());
+	if (tutar >= 100 && tutar < 200)
+	{
+    		Console.WriteLine("kazandığnız indirim oranı %10, TEBRİKLER 1");
+    		double odeme = (tutar) * 9 / 10;
+    		Console.WriteLine("ödemeniz gereken miktar " + odeme);
+	}
+	else if (tutar >= 200 && tutar < 300)
+	{
+    		Console.WriteLine("kazandığnız indirim tutarı %15, TEBRİKLER");
+    		double odeme2 = (tutar) * 85 / 100;
+    		Console.WriteLine("ödemeniz gereken miktar " + odeme2);
+	}
+	else if (tutar >= 300)
+	{
+    		Console.WriteLine("kazandığınız indirim tutarı %20'dir");
+    		double odeme3 = (tutar) * 8 / 10;
+    		Console.WriteLine("ödemeniz gereken miktar " + odeme3);
+	}
+	else
+	{
+    		Console.WriteLine("indirim kazanamadınız ödemeniz gerek miktar " + tutar);
+	}
 
-    Console.ReadKey();
+    		Console.ReadKey();
 
 //Q8 A program that prints the letter grade according to the student grade entered from the keyboard. Conditions (0-39 = F, 40-59 = E, 60-60 = D, 70-79 = C, 80-89 = B, 90,100 = A)
 
 
-Console.WriteLine("lütfen aldığınız sayısal notu giriniz");
-int not = int.Parse(Console.ReadLine());
-if (not >= 0 && not < 40)
-{
-    Console.WriteLine("DERSTEN KALDINIZ ! ");
-    Console.WriteLine("HARF NOTUNUZ F dersi tekrar almanız gerekli");
-}
-else if (not >= 40 && not <= 59)
-{
-    Console.WriteLine("dersten geçtiniz");
-    Console.WriteLine("Harf Notunuz E");
-}
-else if (not > 59 && not <= 69)
-{
-    Console.WriteLine("dersten geçtiniz");
-    Console.WriteLine("Harf Notunuz D ");
-}
-else if (not >69 && not <= 79)
-{
-    Console.WriteLine("dersten geçtiniz");
-    Console.WriteLine("Harf Notunuz C ");
-}
-else if (not > 79 && not <= 89)
-{
-    Console.WriteLine("dersten geçtiniz");
-    Console.WriteLine("Harf Notunuz B ");
-}
-else if (not > 89 && not <= 100)
-{
-    Console.WriteLine("dersten geçtiniz");
-    Console.WriteLine("Harf Notunuz A ");
-}
-else
-{
-    Console.WriteLine("sınav girişi bulunamadı");
-}
+	Console.WriteLine("lütfen aldığınız sayısal notu giriniz");
+	int not = int.Parse(Console.ReadLine());
+	if (not >= 0 && not < 40)
+	{
+    		Console.WriteLine("DERSTEN KALDINIZ ! ");
+    		Console.WriteLine("HARF NOTUNUZ F dersi tekrar almanız gerekli");
+	}
+	else if (not >= 40 && not <= 59)
+	{
+    		Console.WriteLine("dersten geçtiniz");
+    		Console.WriteLine("Harf Notunuz E");
+	}
+	else if (not > 59 && not <= 69)
+	{
+    		Console.WriteLine("dersten geçtiniz");
+    		Console.WriteLine("Harf Notunuz D ");
+	}
+	else if (not >69 && not <= 79)
+	{
+    		Console.WriteLine("dersten geçtiniz");
+    		Console.WriteLine("Harf Notunuz C ");
+	}
+	else if (not > 79 && not <= 89)
+	{
+    		Console.WriteLine("dersten geçtiniz");
+    		Console.WriteLine("Harf Notunuz B ");
+	}
+	else if (not > 89 && not <= 100)
+	{
+    		Console.WriteLine("dersten geçtiniz");
+    		Console.WriteLine("Harf Notunuz A ");
+	}
+	else
+	{
+    		Console.WriteLine("sınav girişi bulunamadı");
+	}
                                            
-Console.ReadKey();
+		Console.ReadKey();
 
 //Q9 The program that displays the amount to be paid according to the hour in a parking lot (0-3 hours 10₺, 4-6 hours 15₺, 7 hours and above 20₺
 
 
-Console.WriteLine("otoparktta kaldığınız süreyi lütfen görveliye bildiriniz ");
- int saat = int.Parse(Console.ReadLine());
- int ucret;
- if (saat >= 0 && saat <= 3)
- {
-     ucret = 10;
- }
- else if (saat >= 4 && saat <= 6)
- {
-     ucret = 15;
- }
- else 
- {
-     ucret = 20;
- }
- Console.WriteLine("OTOPARK İÇİN ÖDEMENİZ GEREKEN MİKTAR " + ucret + " TÜRK LİRASI ");
- Console.ReadKey();
+	Console.WriteLine("otoparktta kaldığınız süreyi lütfen görveliye bildiriniz ");
+ 	int saat = int.Parse(Console.ReadLine());
+ 	int ucret;
+ 	if (saat >= 0 && saat <= 3)
+ 	{
+     		ucret = 10;
+ 	}
+ 	else if (saat >= 4 && saat <= 6)
+ 	{
+     		ucret = 15;
+ 	}
+ 	else 
+ 	{
+     		ucret = 20;
+ 	}
+ 	Console.WriteLine("OTOPARK İÇİN ÖDEMENİZ GEREKEN MİKTAR " + ucret + " TÜRK LİRASI ");
+ 	Console.ReadKey();
 
 //Q10 Monthly electricity bill will be calculated. Get from the user how many kWh he consumes. If the consumption is less than 150, kWh is calculated as 20 kuruş, if it is between 150 and 300, it is calculated as 30 kuruş, and if it is 300 and above, it is calculated as 50 kuruş. Calculate how much the person's bill will be based on their consumption and print it on the screen.
 
 
-Console.WriteLine("HARCADIĞINIZ ELEKTRİK MİKTARINI kWh CİNSİNDEN BELİRTİNİZ");
-int kWh = int.Parse(Console.ReadLine());     
-if (kWh < 150) 
-{
-    double islem = (double)kWh * 0.20;
-    Console.WriteLine("Bu ay kullandığınız elektrik miktatrı = " + " " + kWh + "\n" +
-        "ödemeniz gereken tutar ise " + islem + " TÜRK LİRASI ");
-}
-else if (kWh >= 150 && kWh < 300 )
-{
-    double islem = (double)kWh * 0.30;
-    Console.WriteLine("Bu ay kullandığınız elektrik miktatrı = " + " " + kWh + "\n" +
-        "ödemeniz gereken tutar ise " + islem + " TÜRK LİRASI ");
-}
-else
-{
-    double islem = (double)kWh * 0.50;
-    Console.WriteLine("Bu ay kullandığınız elektrik miktatrı = " + " " + kWh + "\n" +
-        "ödemeniz gereken tutar ise " + islem + " TÜRK LİRASI ");
-}
-Console.ReadKey();
+	Console.WriteLine("HARCADIĞINIZ ELEKTRİK MİKTARINI kWh CİNSİNDEN BELİRTİNİZ");
+	int kWh = int.Parse(Console.ReadLine());     
+	if (kWh < 150) 
+	{
+    		double islem = (double)kWh * 0.20;
+    		Console.WriteLine("Bu ay kullandığınız elektrik miktatrı = " + " " + kWh + "\n" +
+        	"ödemeniz gereken tutar ise " + islem + " TÜRK LİRASI ");
+	}
+	else if (kWh >= 150 && kWh < 300 )
+	{
+    		double islem = (double)kWh * 0.30;
+    		Console.WriteLine("Bu ay kullandığınız elektrik miktatrı = " + " " + kWh + "\n" +
+        	"ödemeniz gereken tutar ise " + islem + " TÜRK LİRASI ");
+	}
+	else
+	{
+    		double islem = (double)kWh * 0.50;
+    		Console.WriteLine("Bu ay kullandığınız elektrik miktatrı = " + " " + kWh + "\n" +
+        	"ödemeniz gereken tutar ise " + islem + " TÜRK LİRASI ");
+	}
+		Console.ReadKey();
 
