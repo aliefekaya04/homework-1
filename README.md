@@ -54,35 +54,33 @@ C# ENTRY LEVEL QUESTİONS
               Console.ReadKey();
 
 //Q4 Ask the user for 2 numbers (Long Side and Short Side for Rectangle). Then output a menu to the user (like below)
-1 - PERIMETER
-2 - AREA
-If the user selects 1, if the area selects 2, calculate the perimeter and print the result on the screen.
 
 
-Console.WriteLine("Dikdörtgenin kısa kenar uzunluğunu giriniz :");
-double kisa_kenar = double.Parse(Console.ReadLine());
-Console.WriteLine("Dikdörtgenin uzun kenar uzunluğunu giriniz : ");
-double uzun_kenar = double.Parse(Console.ReadLine());
-Console.WriteLine(" HOŞGELDİNİZ " + " \n " + "MENÜ");
-Console.WriteLine("1 - alan hesaplama ");
-Console.WriteLine("2 - çevre hesaplama ");
-Console.Write("yapmak istediğiniz işlemi seçiniz : ");
-int secim = Convert.ToInt32(Console.ReadLine());
-if (secim == 1)
-{
-    double alan = uzun_kenar * kisa_kenar;
-    Console.WriteLine("Oluştrduğunuz dikdörtgenin alanı = " + alan);
-}
-else if (secim == 2)
-{
-    double cevre = 2 *(uzun_kenar +  kisa_kenar);
-    Console.WriteLine("oluşturduğunuz dikdörtgenin çevresi = " + cevre);
-}
-else
-{
+
+	Console.WriteLine("Dikdörtgenin kısa kenar uzunluğunu giriniz :");
+	double kisa_kenar = double.Parse(Console.ReadLine());
+	Console.WriteLine("Dikdörtgenin uzun kenar uzunluğunu giriniz : ");
+	double uzun_kenar = double.Parse(Console.ReadLine());
+	Console.WriteLine(" HOŞGELDİNİZ " + " \n " + "MENÜ");
+	Console.WriteLine("1 - alan hesaplama ");
+	Console.WriteLine("2 - çevre hesaplama ");
+	Console.Write("yapmak istediğiniz işlemi seçiniz : ");
+	int secim = Convert.ToInt32(Console.ReadLine());
+	if (secim == 1)
+	{
+    		double alan = uzun_kenar * kisa_kenar;
+    		Console.WriteLine("Oluştrduğunuz dikdörtgenin alanı = " + alan);
+	}
+	else if (secim == 2)
+	{
+    		double cevre = 2 *(uzun_kenar +  kisa_kenar);
+    		Console.WriteLine("oluşturduğunuz dikdörtgenin çevresi = " + cevre);
+	}
+	else
+	{
     Console.WriteLine("!!! geçersiz İŞLEM !!! ");
-}
-Console.ReadKey();
+	}
+		Console.ReadKey();
 
 
 
