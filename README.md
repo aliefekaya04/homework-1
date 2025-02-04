@@ -87,25 +87,25 @@ C# ENTRY LEVEL QUESTİONS
 //Q5 Is the entered whole number divisible by 3 and 5? Write the program to find it.
 
 
-Console.Write("Bir Sayı Giriniz : ");
-int sayi = int.Parse(Console.ReadLine());
-if (sayi % 3 == 0 && sayi % 5 == 0)
-{
-    Console.WriteLine("Girilen sayı 3 ve 5'in ortak katıdır");
-} 
-else if(sayi % 3 == 0 && sayi % 5 != 0)
-{
-    Console.WriteLine("girilen sayı 3'ün katıdır ancak 5'in Katı Değildir");
-}
-else if(sayi % 3 != 0 &&  sayi % 5 == 0)
-{
-    Console.WriteLine("girilen sayı 5'in katıdır ancak 3'ün katı değildir");
-}
-else
-{
-    Console.WriteLine("girilen sayı 3'e ve 5'e Bölünmüyor");
-}         
-Console.ReadKey();
+	Console.Write("Bir Sayı Giriniz : ");
+	int sayi = int.Parse(Console.ReadLine());
+	if (sayi % 3 == 0 && sayi % 5 == 0)
+	{
+    		Console.WriteLine("Girilen sayı 3 ve 5'in ortak katıdır");
+	} 
+	else if(sayi % 3 == 0 && sayi % 5 != 0)
+	{
+    		Console.WriteLine("girilen sayı 3'ün katıdır ancak 5'in Katı Değildir");
+	}
+	else if(sayi % 3 != 0 &&  sayi % 5 == 0)
+	{
+    		Console.WriteLine("girilen sayı 5'in katıdır ancak 3'ün katı değildir");
+	}
+	else
+	{
+    		Console.WriteLine("girilen sayı 3'e ve 5'e Bölünmüyor");
+	}         
+		Console.ReadKey();
 
 
 //Q6 Write c# codes on the screen that show that those who are 18 years old and over can apply for the driving license exam, and if they are under 18, how many years will it take to get a driver's license.
